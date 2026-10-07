@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
 
         // 3. 5 Pacientes de Prueba
         $patients = [
-            ['name' => 'Carlos López', 'email' => 'carlos@paciente.com'],
+            ['name' => 'Carlos López', 'email' => 'carlos@pacieomnte.com'],
             ['name' => 'María García', 'email' => 'maria@paciente.com'],
             ['name' => 'Juan Martínez', 'email' => 'juan@paciente.com'],
             ['name' => 'Ana Hernández', 'email' => 'ana@paciente.com'],

@@ -40,10 +40,10 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     Route::post('/patients', [PatientController::class, 'store'])->name('patients.store');
     Route::patch('/patients/{patient}/toggle', [PatientController::class, 'toggleActive'])->name('patients.toggleActive');
     
-    // Expedientes Clínicos
+  // Expedientes Clínicos
     Route::get('/records', [ClinicalRecordController::class, 'index'])->name('records.index');
-    Route::get('/records/create/{patient}', [ClinicalRecordController::class, 'create'])->name('records.create');
-    Route::post('/records/{patient}', [ClinicalRecordController::class, 'store'])->name('records.store');
+    Route::get('/records/create/{patient?}', [ClinicalRecordController::class, 'create'])->name('records.create');
+    Route::post('/records', [ClinicalRecordController::class, 'store'])->name('records.store');
 
     // Publicidad y Contenido
     Route::get('/site-content', [SiteContentController::class, 'index'])->name('site.index');
